@@ -7,10 +7,11 @@ export const ProjectCard = ({ imageUrl, title, techstack, githubUrl, liveUrl, ch
       <div className="w-full bg-gray-900 dark:bg-gray-800 shadow-lg overflow-hidden rounded-lg	">
         {/* image */}
         <img src={imageUrl} alt={title} />
+
         {/* content */}
         <div className="p-8">
 
-          <h2 className="text-6xl mb-8 dark:text-teal-500">{title}
+          <h2 className="font-headline text-6xl mb-8 dark:text-teal-500">{title}
           </h2>
           <div className="mb-12">
             {techstack.map(tech => {
