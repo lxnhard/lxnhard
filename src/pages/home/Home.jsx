@@ -16,8 +16,9 @@ export const Home = () => {
             Excited to build attractive websites and web-apps with a focus on user experience and SEO requirements.</p>
           <button className="mt-8 py-3 px-5 text-2xl bg-indigo-700 text-gray-300 hover:bg-opacity-80">Hiring? Contact me!</button>
         </div >
-        <img src="img/portrait_square.jpg" className="col-span-3 lg:col-span-1 rounded-full brightness-125 contrast-75 shadow-lg dark:contrast-100 dark:brightness-125" />
+        <img src="img/portrait_square.jpg" alt="Portrait Leonhard Link" className="col-span-3 lg:col-span-1 rounded-full brightness-125 contrast-75 shadow-lg dark:contrast-100 dark:brightness-125" />
       </div >
+
       <div className="container max-w-6xl mx-auto  p-8 m-10">
         <h2 className="font-headline text-3xl text-tealsat-700 dark:text-teal-600 font-bold mb-5">
           My tech stack
