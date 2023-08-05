@@ -32,6 +32,7 @@ export const Home = () => {
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Redux</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">React Native</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Vite</span>
+        <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Angular</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">NodeJS</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Express</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">MongoDB</span>
