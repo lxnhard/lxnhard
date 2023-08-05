@@ -1,7 +1,7 @@
-// import { useState } from <span className="text-lg text-gray-300 border p-2 mr-4 mb-4">react";
+
+import { Projects } from '../../components/Projects.jsx'
 
 export const Home = () => {
-
 
   return (
     <>
@@ -26,16 +26,17 @@ export const Home = () => {
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">HTML</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">CSS</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">TailwindCSS</span>
-        <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Bootstrap</span><br />
+        <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Bootstrap</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Javascript</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">React</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Redux</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">React Native</span>
-        <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Vite</span><br />
+        <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Vite</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">NodeJS</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Express</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">MongoDB</span>
         <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Amazon&nbsp;Web&nbsp;Services&nbsp;(AWS)</span>
+        <span className="inline-block text-lg dark:text-gray-300 border-2 border-gray-400 p-2 mr-4 mb-4">Git</span>
       </div>
 
       <div className="container mx-auto p-8 m-10">
@@ -57,6 +58,10 @@ export const Home = () => {
       </div >
 
 
+      <section className="p-8">
+        <h1 className="font-headline text-6xl text-tealsat-700 dark:text-teal-600 mb-16">Projects</h1>
+        <Projects />
+      </section >
 
     </>
   );

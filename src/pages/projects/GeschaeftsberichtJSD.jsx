@@ -1,19 +1,13 @@
-import { useState } from "react";
-import { ProjectCard } from '../../components/ProjectCard.jsx'
 
-export const Projects = () => {
-  const [projectIndex, setProjectIndex] = useState(0);
 
-  const handleClick = (index) => {
-    setProjectIndex(index);
-  }
+export const GeschaeftsberichtJSD = () => {
 
 
   return (
     <>
       <section className="grid grid-cols-12">
         <div className="col-start-3 col-span-8 row-span-5 row-start-1" >
-          <h1 className="font-headline text-6xl dark:text-gray-300 mb-5">Projects</h1>
+          <h1 className="font-headline text-6xl dark:text-gray-300 mb-5">Case study</h1>
           <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer"><img src="img/johannesstift_diakonie-gb22.png" alt="" /></a>
         </div>
 
@@ -176,102 +170,6 @@ export const Projects = () => {
         </div>
       </section>
 
-
-      <section className="grid grid-cols-12 mt-48">
-        <h2 className="col-span-12 text-6xl mb-8 dark:text-teal-500">Other projects</h2>
-        <div className="col-start-1 col-span-9">
-
-          {projectIndex === 1 ?
-            <ProjectCard
-              title="Watch-Til-Death (React/AWS)"
-              imageUrl="img/movie-app.jpg"
-              techstack={["React", "Redux", "Javascript", "AWS"]}
-              githubUrl="https://github.com/lxnhard/movie_app-client"
-              liveUrl="https://watch-til-death.com">
-              <p className="mt-8">
-                The web application uses the MERN stack to provide users with access to
-                information about different movies, directors, and genres. Users are able to sign up, update their profile, and
-                create a list of their favorite movies.</p>
-              <h3 className="font-bold py-2">Deployment</h3>
-              <p>
-                Deployed with Amazon Web Services using a custom VPC, redundant EC2 instances in different
-                availability zones, S3 buckets for client side and file storage, and Lambda for serverless
-                functions.
-              </p>
-            </ProjectCard>
-            : projectIndex === 2 ?
-              <ProjectCard imageUrl="img/movie-api.jpg"
-                title="Movie API"
-                techstack={["NodeJS", "Express", "MongoDB", "AWS"]}
-                githubUrl="https://github.com/lxnhard/movie_api"
-                liveUrl="https://api.watch-til-death.com">
-                <p className="mt-8">
-                  REST API for the web application Watch-Til-Death with different endpoints for movie and user data.
-                  Built with NodeJS, Express, MongoDB and Mongoose. Implements JWT token-based user authentication.</p>
-                <h3 className="font-bold py-2">Deployment</h3>
-                <p>
-                  Deployed with Amazon Web Services. Three EC2 instances in an Auto Scaling group behind an Application
-                  Load Balancer and a separate database instance guarantee redundancy and scalability.
-                </p>
-              </ProjectCard>
-              :
-              <ProjectCard
-                title="Watch-Til-Death (Angular)"
-                imageUrl="img/movie-app-angular.jpg"
-                techstack={["Angular", "Angular Mateiral", "Javascript"]}
-                githubUrl="https://github.com/lxnhard/movie_app-angular-client"
-                liveUrl="https://lxnhard.github.io/movie_app-angular-client">
-                <p className="mt-8">
-                  Client-side for a single page web application providing authenticated users
-                  with information about different movies, built with Angular.</p>
-                <h3 className="font-bold py-2">Deployment</h3>
-                <p>
-                  The web application uses the MEAN stack to provide users with access to
-                  information about different movies, directors, and genres. Users are able to sign up, update their profile, and
-                  create a list of their favorite movies.
-                </p>
-              </ProjectCard>
-          }
-
-
-
-        </div>
-
-
-        {/* Thumbnails */}
-        <div className="col-start-11 col-span-2">
-          <div className="flex flex-col">
-            {/* <div className={`bg-white shadow-md rounded-md overflow-hidden mb-4 w-full cursor-pointer	transition-all duration-300 ${projectIndex === 0 ? "opacity-100 scale-110 origin-right" : "opacity-50 hover:opacity-75"}`} onClick={() => handleClick(0)}>
-              <img src="img/johannesstift_diakonie-gb22.png" className="" />
-              <div className="p-3">
-                <p className="text-md font-bold">Johannesstift Diakonie</p>
-              </div>
-            </div> */}
-            <div className={`bg-white shadow-md rounded-md overflow-hidden mb-4 w-full cursor-pointer	transition-all duration-300 ${projectIndex === 1 ? "opacity-100 scale-110 origin-right" : "opacity-50 hover:opacity-75"}`} onClick={() => handleClick(1)}>
-              <img src="img/movie-app.jpg" className="" />
-              <div className="p-3">
-                <p className="text-md font-bold">Movie App (React)</p>
-                {/* <p className="text-sm">Extremely short description in a few words.</p> */}
-              </div>
-            </div>
-            <div className={`bg-white shadow-md rounded-md overflow-hidden mb-4 w-full cursor-pointer	transition-all duration-300	${projectIndex === 2 ? "opacity-100 scale-110 origin-right" : "opacity-50 hover:opacity-75"}`} onClick={() => handleClick(2)}>
-              <img src="img/movie-api.jpg" className="" />
-              <div className="p-3">
-                <p className="text-md font-bold py-1">Movie API</p>
-                <p className="text-sm">Extremely short description in a few words.</p>
-              </div>
-            </div>
-            <div className={`bg-white shadow-md rounded-md overflow-hidden mb-4 w-full cursor-pointer	transition-all duration-300	${projectIndex === 3 ? "opacity-100 scale-110 origin-right" : "opacity-50 hover:opacity-75"}`} onClick={() => handleClick(3)}>
-              <img src="img/movie-app-angular.jpg" className="" />
-              <div className="p-3">
-                <p className="text-md font-bold">Movie App (Angular)</p>
-                {/* <p className="text-sm">Extremely short description in a few words.</p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
     </>
   );
 };

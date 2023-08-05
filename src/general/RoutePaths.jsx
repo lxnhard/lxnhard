@@ -1,5 +1,5 @@
 export const RoutePaths = {
   HOME: '/',
-  PROJECTS: '/projects',
-  CONTACT: '/contact'
+  CONTACT: '/contact',
+  GBJSD: '/geschaeftsbericht_jsd'
 };

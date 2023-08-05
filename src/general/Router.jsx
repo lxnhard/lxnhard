@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { RoutePaths } from "./RoutePaths.jsx";
 import { Home } from "../pages/home/Home.jsx";
-import { Projects } from "../pages/projects/projects.jsx";
+import { GeschaeftsberichtJSD } from "../pages/projects/GeschaeftsberichtJSD.jsx";
 import { Contact } from "../pages/contact/Contact.jsx"
 import { NotFound } from "./NotFound.jsx";
 import { Layout } from "./Layout.jsx";
@@ -18,18 +18,18 @@ export const Router = () => (
       }
     />
     <Route
-      path={RoutePaths.PROJECTS}
-      element={
-        <Layout>
-          <Projects />
-        </Layout>
-      }
-    />
-    <Route
       path={RoutePaths.CONTACT}
       element={
         <Layout>
           <Contact />
+        </Layout>
+      }
+    />
+    <Route
+      path={RoutePaths.GBJSD}
+      element={
+        <Layout>
+          <GeschaeftsberichtJSD />
         </Layout>
       }
     />
