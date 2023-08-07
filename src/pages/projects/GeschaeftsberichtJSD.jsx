@@ -1,31 +1,35 @@
+import { useEffect } from "react";
 
 
 export const GeschaeftsberichtJSD = () => {
 
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  })
 
   return (
     <>
-      <section className="grid grid-cols-12">
-        <div className="col-start-3 col-span-8 row-span-5 row-start-1" >
+      <section className="grid grid-cols-12 p-4 sm:p-8 pt-32 sm:pt-32 ">
+        <div className="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8" >
           <h1 className="font-headline text-6xl dark:text-gray-300 mb-5">Case study</h1>
           <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer"><img src="img/johannesstift_diakonie-gb22.png" alt="" /></a>
-        </div>
 
-        <div className="col-start-3 col-span-8 row-start-6 row-span-2 bg-slate-800/95 p-8">
-          <p className="text-lg dark:text-teal-600">Johannesstift Diakonie</p>
-          <h2 className="text-headline text-4xl mb-4 dark:text-gray-300">Geschäftsbericht 2022</h2>
-          <div className="mt-auto mb-0">
-            {["React", "Javascript", "Bootstrap", "SCSS", "lottie-web"].map(tech => {
-              return (
-                <span className="inline-block text-md dark:text-gray-300 border-2 border-gray-400 p-2 mr-2 mt-2" key={tech}>{tech}</span>
-              )
-            })}
+          <div className="bg-slate-800/95 p-4 sm:p-8">
+            <p className="text-lg dark:text-teal-600">Johannesstift Diakonie</p>
+            <h2 className="text-headline text-4xl mb-4 dark:text-gray-300">Geschäftsbericht 2022</h2>
+            <div className="mt-auto mb-0">
+              {["React", "Javascript", "Bootstrap", "SCSS", "lottie-web"].map(tech => {
+                return (
+                  <span className="inline-block text-md dark:text-gray-300 border-2 border-gray-400 p-2 mr-2 mt-2" key={tech}>{tech}</span>
+                )
+              })}
+            </div>
 
           </div>
         </div>
 
 
-        <div className="col-start-3 col-span-8 col-end-11">
+        <div className="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8">
 
 
           <p className="mt-8 mb-4 dark:text-gray-400">

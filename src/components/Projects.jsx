@@ -26,7 +26,7 @@ export const Projects = () => {
         </div>
 
         <div className="col-start-1 col-end-13 row-start-2 lg:col-end-8 xl:col-end-9 h-full relative">
-          <div className="p-8 pt-4 w-full">
+          <div className="p-4 sm:p-8 pt-4 w-full">
             <p className="text-lg text-teal-600">Johannesstift Diakonie</p>
             <h2 className="text-headline text-4xl mb-4 text-gray-300">Geschäftsbericht 2022</h2>
             <div className="mt-auto mb-0">
@@ -40,7 +40,7 @@ export const Projects = () => {
 
         </div>
 
-        <div className="col-start-1 xl:col-start-9 col-end-13 xl:row-start-1 bg-slate-800 xl:border-l-4 dark:border-gray-950 pt-0 pb-0 lg:pb-8 p-8 xl:pb-0 xl:pt-8">
+        <div className="col-start-1 xl:col-start-9 col-end-13 xl:row-start-1 bg-slate-800 xl:border-l-4 dark:border-gray-950 pt-0 pb-0 lg:pb-8 p-4 sm:p-8 xl:pb-0 xl:pt-8">
           <div className="flex flex-col justify-between">
 
             <div>
@@ -59,7 +59,7 @@ export const Projects = () => {
         </div>
 
 
-        <div className="col-start-1 lg:col-start-8 lg:row-start-2 xl:col-start-9 col-end-13 bg-slate-800 xl:border-l-4 dark:border-gray-950 p-8">
+        <div className="col-start-1 lg:col-start-8 lg:row-start-2 xl:col-start-9 col-end-13 bg-slate-800 xl:border-l-4 dark:border-gray-950 p-4 sm:p-8">
 
           <div className="flex flex-col justify-end h-full">
 
@@ -163,7 +163,7 @@ export const Projects = () => {
 
 
         <div className={`col-start-1 lg:col-start-7 col-end-13 row-start-2 lg:row-start-1 lg:row-end-4 h-full 
-        bg-slate-800 border-b-4 lg:border-b-0 dark:border-gray-950  p-8 lg:pb-4
+        bg-slate-800 border-b-4 lg:border-b-0 dark:border-gray-950  p-4 sm:p-8 lg:pb-4
                 ${isExpanded[1] !== 0 ? "lg:-translate-x-full invisible lg:visible hidden lg:block" : null} 
                 ${isExpanded[0] !== false && isExpanded[1] === 0 ? "delay-150" : null}
                 transition-translate duration-150 ease-in-out	
@@ -211,7 +211,7 @@ export const Projects = () => {
         </div>
 
 
-        <div className={`col-start-1 lg:col-start-7 col-end-13 row-start-3 lg:row-start-1 lg:row-end-4 h-full bg-slate-800 p-8 lg:pb-4
+        <div className={`col-start-1 lg:col-start-7 col-end-13 row-start-3 lg:row-start-1 lg:row-end-4 h-full bg-slate-800 p-4 sm:p-8 lg:pb-4
                 ${isExpanded[1] !== 1 ? "lg:-translate-x-full invisible lg:visible hidden lg:block" : null} 
                 ${isExpanded[0] !== false && isExpanded[1] === 1 ? "delay-150" : null}
                 transition-translate duration-150 ease-in-out	
@@ -257,7 +257,7 @@ export const Projects = () => {
         </div>
 
 
-        <div className={`col-start-1 lg:col-start-7 col-end-13 row-start-4 lg:row-start-1 lg:row-end-4 h-full bg-slate-800  p-8 lg:pb-4
+        <div className={`col-start-1 lg:col-start-7 col-end-13 row-start-4 lg:row-start-1 lg:row-end-4 h-full bg-slate-800  p-4 sm:p-8 lg:pb-4
         dark:border-gray-950
                 ${isExpanded[1] !== 2 ? "lg:-translate-x-full invisible lg:visible hidden lg:block" : null} 
                 ${isExpanded[0] !== false && isExpanded[1] === 2 ? "delay-150" : null}
