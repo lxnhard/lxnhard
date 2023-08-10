@@ -19,7 +19,6 @@ export const Projects = () => {
 
           <div className="relative w-full">
             <div>
-              {/* <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer"><img src="img/johannesstift_diakonie-gb22.png" alt="" /></a> */}
               <Link to="/geschaeftsbericht_jsd" title="Case study: Geschäftsbericht 2022 | Johannesstift Diakonie"><img src="img/johannesstift_diakonie-gb22.png" alt="Geschäftsbericht Johannesstift Diakonie 2022" /></Link>
             </div>
           </div>
@@ -63,8 +62,8 @@ export const Projects = () => {
 
           <div className="flex flex-col justify-end h-full">
 
-            <a href="https://gb22.johannesstift-diakonie.de/" className="w-full" rel="noreferrer" target="_blank" title="Open website">
-              <div className="inline-block flex flex-row items-center justify-between py-2 px-4 mb-4 rounded-md bg-teal-800 hover:bg-opacity-80">
+            <a href="https://gb22.johannesstift-diakonie.de/" rel="noreferrer" target="_blank" title="Open website">
+              <div className="w-full flex flex-row items-center justify-between py-2 px-4 mb-4 rounded-md bg-teal-800 hover:bg-opacity-80">
                 <img src="img/link_icon.svg" className="mr-2 h-7 inline-block" alt="Icon: External Link" />
                 <span className="text-2xl text-gray-300 mx-auto">
                   Open website
@@ -73,8 +72,8 @@ export const Projects = () => {
             </a>
 
 
-            <Link to="/geschaeftsbericht_jsd" className="w-full" title="Case study: Geschäftsbericht 2022 | Johannesstift Diakonie">
-              <div className="inline-block flex flex-row items-center justify-between py-2 px-4 rounded-md bg-indigo-800 hover:bg-opacity-80">
+            <Link to="/geschaeftsbericht_jsd" title="Case study: Geschäftsbericht 2022 | Johannesstift Diakonie">
+              <div className="w-full flex flex-row items-center justify-between py-2 px-4 rounded-md bg-indigo-800 hover:bg-opacity-80">
                 <img src="img/information_icon.svg" className="mr-2 h-7 inline" alt="Icon: External Link" />
                 <span className="text-2xl text-gray-300 mx-auto">
                   Read case study
@@ -189,7 +188,7 @@ export const Projects = () => {
             <div className="mt-8 flex flex-wrap gap-4">
 
               <a href="https://github.com/lxnhard/movie_app-client" rel="noreferrer" target="_blank" title="View code on GitHub">
-                <div className="inline-block py-2 px-8 rounded-md bg-teal-800 hover:bg-opacity-80">
+                <div className="inline-block flex items-center py-2 px-8 rounded-md bg-teal-800 hover:bg-opacity-80">
                   <img src="img/github_icon.svg" className="mr-2 h-5 inline-block" alt="Icon: Github Link" />
                   <span className=" text-gray-300 mx-auto">
                     View Code on Github
@@ -197,8 +196,8 @@ export const Projects = () => {
                 </div>
               </a>
 
-              <a href="https://watch-til-death.com" rel="noreferrer" target="_blank" title="Open website">
-                <div className="inline-block py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
+              <a href="https://watch-til-death.com" className="flex" rel="noreferrer" target="_blank" title="Open website">
+                <div className="inline-block flex items-center py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
                   <img src="img/link_icon.svg" className="mr-2 h-5 inline-block" alt="Icon: Github Link" />
                   <span className=" text-gray-300 mx-auto">
                     Open website
@@ -233,8 +232,8 @@ export const Projects = () => {
 
             <div className="mt-8 flex flex-wrap gap-4">
 
-              <a href="https://github.com/lxnhard/movie_api" rel="noreferrer" target="_blank" title="View code on GitHub">
-                <div className="inline-block py-2 px-8 rounded-md bg-teal-800 hover:bg-opacity-80">
+              <a href="https://github.com/lxnhard/movie_api" className="flex" rel="noreferrer" target="_blank" title="View code on GitHub">
+                <div className="inline-block flex items-center py-2 px-8 rounded-md bg-teal-800 hover:bg-opacity-80">
                   <img src="img/github_icon.svg" className="mr-2 h-5 inline-block" alt="Icon: Github Link" />
                   <span className=" text-gray-300 mx-auto">
                     View Code on Github
@@ -242,8 +241,8 @@ export const Projects = () => {
                 </div>
               </a>
 
-              <a href="https://api.watch-til-death.com" rel="noreferrer" target="_blank" title="Open website">
-                <div className="inline-block py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
+              <a href="https://api.watch-til-death.com" className="flex" rel="noreferrer" target="_blank" title="Open website">
+                <div className="inline-block flex items-center py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
                   <img src="img/link_icon.svg" className="mr-2 h-5 inline-block" alt="Icon: Github Link" />
                   <span className=" text-gray-300 mx-auto">
                     Open website
@@ -280,8 +279,8 @@ export const Projects = () => {
 
             <div className="mt-8 flex flex-wrap gap-4">
 
-              <a href="https://github.com/lxnhard/movie_app-angular-client" rel="noreferrer" target="_blank" title="View code on GitHub">
-                <div className="inline-block py-2 px-8 rounded-md bg-teal-800 hover:bg-opacity-80">
+              <a href="https://github.com/lxnhard/movie_app-angular-client" className="flex" rel="noreferrer" target="_blank" title="View code on GitHub">
+                <div className="inline-block flex items-center py-2 px-8 rounded-md bg-teal-800 hover:bg-opacity-80">
                   <img src="img/github_icon.svg" className="mr-2 h-5 inline-block" alt="Icon: Github Link" />
                   <span className=" text-gray-300 mx-auto">
                     View Code on Github
@@ -289,8 +288,8 @@ export const Projects = () => {
                 </div>
               </a>
 
-              <a href="https://lxnhard.github.io/movie_app-angular-client" rel="noreferrer" target="_blank" title="Open website">
-                <div className="inline-block py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
+              <a href="https://lxnhard.github.io/movie_app-angular-client" className="flex" rel="noreferrer" target="_blank" title="Open website">
+                <div className="inline-block flex items-center py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
                   <img src="img/link_icon.svg" className="mr-2 h-5 inline-block" alt="Icon: Github Link" />
                   <span className=" text-gray-300 mx-auto">
                     Open website
