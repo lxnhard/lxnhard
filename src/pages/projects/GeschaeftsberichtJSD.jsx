@@ -33,7 +33,7 @@ export const GeschaeftsberichtJSD = () => {
 
 
           <p className="mt-8 mb-4 dark:text-gray-400">
-            Annual report landingpage for <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer" className="text-purple-700 hover:underline visited:text-indigo-500">Johannesstift Diakonie</a>. A Single Page Application written with React, utilizing various animations, complex transitions and self-hosted videos.</p>
+            Annual report landingpage for <a href="https://gb22.johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer" className="text-purple-700 hover:underline visited:text-indigo-500">Johannesstift Diakonie</a>. A Single Page Application written with React, utilizing various animations, complex transitions and self-hosted videos.</p>
           <p className="mb-4 dark:text-gray-400">The website is showcasing the company’s activities throughout the year to shareholders, business partners and other interested people.</p>
           <h3 className="font-bold py-2 dark:text-gray-300">My role</h3>
           <p className="mb-4 dark:text-gray-400">
@@ -170,7 +170,16 @@ export const GeschaeftsberichtJSD = () => {
               </span>
             </li>
           </ul>
-
+          <div className="mt-16">
+            <a href="https://gb22.johannesstift-diakonie.de/" className="flex" rel="noreferrer" target="_blank" title="Open website">
+              <div className="flex items-center py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
+                <img src="img/link_icon.svg" className="mr-2 h-7 inline-block" alt="Icon: External Link" />
+                <span className="text-2xl text-gray-300 mx-auto">
+                  Open website
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
