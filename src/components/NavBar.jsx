@@ -78,8 +78,10 @@ export const NavBar = (props) => {
                   <NavLink to="/"
                     title="Projects"
                     // activeClass=""
-                    className={
-                      "text-tealsat-700 dark:text-teal-600 border-b text-lg"}
+                    className={location.pathname === "/geschaeftsbericht_jsd" ?
+                      "text-tealsat-700 dark:text-teal-600 border-b text-lg" :
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"
+                    }
                     onClick={() => props.updateScrollId("projects")}
                   >
                     Projects
