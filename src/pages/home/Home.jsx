@@ -85,7 +85,6 @@ export const Home = (props) => {
       </section >
 
       <section className="py-16" id="contact">
-        {/* <h1 className="font-headline text-6xl text-tealsat-700 dark:text-teal-600 mb-16">Contact</h1> */}
         <Contact />
       </section >
 
