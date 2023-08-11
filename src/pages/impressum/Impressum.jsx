@@ -22,10 +22,10 @@ export const Impressum = () => {
 
           </p>
           <p className="mb-4 dark:text-gray-400">
-            Leonhard Link
-            Rosenfelder Ring 28
-            10315 Berlin
-            leolink.dev[at]gmail.com
+            Leonhard Link<br />
+            Rosenfelder Ring 28<br />
+            10315 Berlin<br />
+            <a href="mailto:leolink.dev@gmail.com" className="text-purple-700 hover:underline visited:text-indigo-500">leolink.dev[at]gmail.com</a>
 
           </p>
           <h3 className="font-bold py-2 dark:text-gray-300">

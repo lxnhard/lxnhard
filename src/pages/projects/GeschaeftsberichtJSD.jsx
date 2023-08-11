@@ -11,16 +11,16 @@ export const GeschaeftsberichtJSD = () => {
     <>
       <section className="grid grid-cols-12 p-4 sm:p-8 pt-32 sm:pt-32 ">
         <div className="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8" >
-          <h1 className="font-headline text-6xl dark:text-gray-300 mb-5">Case study</h1>
+          <h1 className="font-headline text-6xl text-tealsat-700 dark:text-teal-600 mb-5">Case study</h1>
           <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer"><img src="img/johannesstift_diakonie-gb22.png" alt="" /></a>
 
           <div className="bg-slate-800/95 p-4 sm:p-8">
-            <p className="text-lg dark:text-teal-600">Johannesstift Diakonie</p>
-            <h2 className="text-headline text-4xl mb-4 dark:text-gray-300">Geschäftsbericht 2022</h2>
+            <p className="text-lg text-teal-600">Johannesstift Diakonie</p>
+            <h2 className="text-headline text-4xl mb-4 text-gray-300">Geschäftsbericht 2022</h2>
             <div className="mt-auto mb-0">
               {["React", "Javascript", "Bootstrap", "SCSS", "lottie-web"].map(tech => {
                 return (
-                  <span className="inline-block text-md dark:text-gray-300 border-2 border-gray-400 p-2 mr-2 mt-2" key={tech}>{tech}</span>
+                  <span className="inline-block text-md text-gray-300 border-2 border-gray-400 p-2 mr-2 mt-2" key={tech}>{tech}</span>
                 )
               })}
             </div>
@@ -172,9 +172,11 @@ export const GeschaeftsberichtJSD = () => {
           </ul>
           <div className="mt-16">
             <a href="https://gb22.johannesstift-diakonie.de/" className="flex" rel="noreferrer" target="_blank" title="Open website">
-              <div className="flex items-center py-2 px-8 rounded-md bg-indigo-800 hover:bg-opacity-80">
-                <img src="img/link_icon.svg" className="mr-2 h-7 inline-block" alt="Icon: External Link" />
-                <span className="text-2xl text-gray-300 mx-auto">
+              <div className="inline-flex items-center justify-center py-2 px-8 rounded-md bg-indigo-600 dark:bg-indigo-700 text-gray-100 dark:text-gray-300 hover:bg-opacity-80">
+                <svg className="mr-2 h-7 inline-block stroke-current" fill="none" height="24" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" /><line x1="10" x2="21" y1="14" y2="3" />
+                </svg>
+                <span className="text-2xl mx-auto">
                   Open website
                 </span>
               </div>

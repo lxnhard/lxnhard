@@ -18,7 +18,7 @@ export const App = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-950" >
+    <div className="min-h-screen bg-slate-100 dark:bg-gray-950" >
       <BrowserRouter>
         <Suspense
           fallback={

@@ -12,7 +12,7 @@ export const Projects = () => {
   return (
     <>
 
-      <div className="grid grid-cols-12 mb-16 bg-slate-800">
+      <div className="grid grid-cols-12 mb-16 shadow-2xl xl:space-x-1">
 
         <div className="col-start-1 col-end-13 xl:col-end-9 xl:row-start-1 xl:row-end-2">
 
@@ -24,7 +24,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        <div className="col-start-1 col-end-13 row-start-2 lg:col-end-8 xl:col-end-9 h-full relative">
+        <div className="col-start-1 col-end-13 row-start-2 lg:col-end-8 xl:col-end-9 h-full relative bg-slate-800">
           <div className="p-4 sm:p-8 pt-4 w-full">
             <p className="text-lg text-teal-600">Johannesstift Diakonie</p>
             <h2 className="text-headline text-4xl mb-4 text-gray-300">Geschäftsbericht 2022</h2>
@@ -39,7 +39,7 @@ export const Projects = () => {
 
         </div>
 
-        <div className="col-start-1 xl:col-start-9 col-end-13 xl:row-start-1 bg-slate-800 xl:border-l-4 dark:border-gray-950 pt-0 pb-0 lg:pb-8 p-4 sm:p-8 xl:pb-0 xl:pt-8">
+        <div className="col-start-1 xl:col-start-9 col-end-13 xl:row-start-1 bg-slate-800 pt-0 pb-0 lg:pb-8 p-4 sm:p-8 xl:pb-0 xl:pt-8">
           <div className="flex flex-col justify-between">
 
             <div>
@@ -58,7 +58,7 @@ export const Projects = () => {
         </div>
 
 
-        <div className="col-start-1 lg:col-start-8 lg:row-start-2 xl:col-start-9 col-end-13 bg-slate-800 xl:border-l-4 dark:border-gray-950 p-4 sm:p-8">
+        <div className="col-start-1 lg:col-start-8 lg:row-start-2 xl:col-start-9 col-end-13 bg-slate-800 p-4 sm:p-8">
 
           <div className="flex flex-col justify-end h-full">
 
@@ -89,7 +89,7 @@ export const Projects = () => {
 
       {/* small projects */}
 
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 ">
 
         <div className={`col-start-1 col-end-13 lg:col-end-7 h-full relative z-10 border-b-4 lg:border-r-4 dark:border-gray-950 cursor-pointer delay-300
         ${isExpanded[1] === 0 ? "bg-slate-800" : "bg-slate-900 hover:bg-slate-800"}`}

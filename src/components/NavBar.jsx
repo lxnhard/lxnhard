@@ -33,14 +33,14 @@ export const NavBar = (props) => {
   }
 
   return (
-    <nav className="fixed w-full bg-slate-950 z-30 top-0">
+    <nav className="fixed w-full bg-slate-100 dark:bg-slate-950 z-30 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center justify-between w-full">
             <div className="flex-shrink-0 text-black pb-0">
               <a href="/" title="Home" aria-label="Homepage">
                 <div className="text-2xl text-gray-900 dark:text-gray-300 leading-none">LEONHARD LINK</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400 leading-none">web developer</div>
+                <div className="text-sm text-tealsat-700 dark:text-gray-500 dark:text-gray-400 leading-none">web developer</div>
               </a>
             </div>
             <div className="hidden md:block">
@@ -49,17 +49,16 @@ export const NavBar = (props) => {
                   <Link to="about"
                     title="About me"
                     spy={true} smooth={true} duration={500} offset={-100}
-                    activeClass="text-tealsat-700 dark:text-teal-600 border-b text-lg"
+                    activeClass="text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100"
                     className={
-                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"}
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg cursor-pointer"}
                   >
                     About me
                   </Link> :
                   <NavLink to="/"
                     title="About me"
-                    // activeClass="text-tealsat-700 dark:text-teal-600 border-b text-lg"
                     className={
-                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"}
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg cursor-pointer"}
                     onClick={() => props.updateScrollId("about")}
                   >
                     About me
@@ -69,18 +68,17 @@ export const NavBar = (props) => {
                   <Link to="projects"
                     title="Projects"
                     spy={true} smooth={true} duration={500} offset={-100}
-                    activeClass="text-tealsat-700 dark:text-teal-600 border-b text-lg"
+                    activeClass="text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100"
                     className={
-                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"}
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg cursor-pointer"}
                   >
                     Projects
                   </Link> :
                   <NavLink to="/"
                     title="Projects"
-                    // activeClass=""
                     className={location.pathname === "/geschaeftsbericht_jsd" ?
-                      "text-tealsat-700 dark:text-teal-600 border-b text-lg" :
-                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"
+                      "text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100 text-lg cursor-pointer" :
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg cursor-pointer"
                     }
                     onClick={() => props.updateScrollId("projects")}
                   >
@@ -92,17 +90,16 @@ export const NavBar = (props) => {
                   <Link to="contact"
                     title="Contact"
                     spy={true} smooth={true} duration={500} offset={-100}
-                    activeClass="text-tealsat-700 dark:text-teal-600 border-b text-lg"
+                    activeClass="text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100"
                     className={
-                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"}
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg cursor-pointer"}
                   >
                     Contact
                   </Link> :
                   <NavLink to="/"
                     title="Contact"
-                    // activeClass="text-tealsat-700 dark:text-teal-600 border-b text-lg"
                     className={
-                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg"}
+                      "text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-lg cursor-pointer"}
                     onClick={() => props.updateScrollId("contact")}
                   >
                     Contact
@@ -128,7 +125,7 @@ export const NavBar = (props) => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center px-3 py-2 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center px-3 py-2 text-gray-900 dark:text-gray-300  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -188,14 +185,14 @@ export const NavBar = (props) => {
                 spy={true} smooth={true} duration={500} offset={-100}
                 activeClass="text-tealsat-700 dark:text-teal-600"
                 className={
-                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b pb-4"}
+                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b border-gray-700 dark:border-gray-100  pb-4"}
               >
                 About me
               </Link> :
               <NavLink to="/"
                 title="About me"
                 className={
-                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b pb-4"}
+                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b border-gray-700 dark:border-gray-100  pb-4"}
                 onClick={() => props.updateScrollId("about")}
               >
                 About me
@@ -205,17 +202,16 @@ export const NavBar = (props) => {
               <Link to="projects"
                 title="Projects"
                 spy={true} smooth={true} duration={500} offset={-100}
-                activeClass="text-tealsat-700 dark:text-teal-600 border-b"
+                activeClass="text-tealsat-700 dark:text-teal-600 "
                 className={
-                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b py-4"}
+                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b border-gray-700 dark:border-gray-100  py-4"}
               >
                 Projects
               </Link> :
               <NavLink to="/"
                 title="Projects"
-                // activeClass=""
                 className={
-                  "text-tealsat-700 dark:text-teal-600 border-b text-2xl border-b py-4"}
+                  "text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100 text-2xl py-4"}
                 onClick={() => props.updateScrollId("projects")}
               >
                 Projects
@@ -228,15 +224,14 @@ export const NavBar = (props) => {
                 spy={true} smooth={true} duration={500} offset={-100}
                 activeClass="text-tealsat-700 dark:text-teal-600"
                 className={
-                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b py-4"}
+                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b border-gray-700 dark:border-gray-100  py-4"}
               >
                 Contact
               </Link> :
               <NavLink to="/"
                 title="Contact"
-                // activeClass="text-tealsat-700 dark:text-teal-600 border-b text-lg"
                 className={
-                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b py-4"}
+                  "block text-gray-900 dark:text-gray-300 hover:text-tealsat-700 dark:hover:text-teal-600 text-2xl border-b border-gray-700 dark:border-gray-100  py-4"}
                 onClick={() => props.updateScrollId("contact")}
               >
                 Contact
@@ -247,13 +242,13 @@ export const NavBar = (props) => {
             <button
               onClick={toggleTheme}
               type="button"
-              className="flex items-center justify-center text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center text-gray-900 dark:text-gray-300 hover:text-yellow-600 dark:hover:text-yellow-500 focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
               {isDarkMode ?
-                <BsSun className="text-gray-300 mx-3 my-4" /> :
-                <BsMoon className="text-gray-300 mx-3 my-4" />}
+                <BsSun className="text-gray-300 mx-3 my-4" color="currentColor" /> :
+                <BsMoon className="text-gray-300 mx-3 my-4" color="currentColor" />}
             </button>
           </div>
         </div>
