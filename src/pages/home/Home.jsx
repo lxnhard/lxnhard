@@ -89,7 +89,7 @@ export const Home = (props) => {
         <Projects />
       </section >
 
-      <section className="py-16" id="contact">
+      <section className="py-16 xl:py-24" id="contact">
         <Contact />
       </section >
 
