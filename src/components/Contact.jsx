@@ -1,7 +1,11 @@
 import useWeb3Forms from '@web3forms/react';
-
+import { useState } from 'react';
 
 export const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [confirmAlert, setConfirmAlert] = useState('');
 
   // W3Forms submit
   const accessKey = '0df697b2-c77a-4f42-b4be-5176bda52c34';
@@ -12,10 +16,13 @@ export const Contact = () => {
       subject: 'New Contact Message from your Website',
     },
     onSuccess: (message, data) => {
-      console.log(message);
+      setConfirmAlert("Message successfully sent.");
+      setName('');
+      setEmail('');
+      setMessage('');
     },
     onError: (message, data) => {
-      console.log(message);
+      setConfirmAlert("Error. Please try again or contact me via Email.");
     },
   });
 
@@ -47,22 +54,25 @@ export const Contact = () => {
       <form onSubmit={handleSubmit} className="col-span-12 lg:col-span-7 xl:col-span-6">
         <div className="w-full my-4">
           <label htmlFor="name" className="w-full">Name *</label>
-          <input name="name" type="text" className="w-full text-gray-700 p-2" placeholder="Your name" required />
+          <input name="name" type="text" className="w-full text-gray-700 p-2" placeholder="Your name" onChange={event => setName(event.target.value)}
+            value={name} required />
         </div>
         <div className="w-full my-4">
           <label htmlFor="email" className="w-full">Email *</label>
-          <input name="email" type="email" className="w-full text-gray-700 p-2" placeholder="Your email" required />
+          <input name="email" type="email" className="w-full text-gray-700 p-2" placeholder="Your email" onChange={event => setEmail(event.target.value)}
+            value={email} required />
         </div>
-        <div className="w-full my-4 ">
+        <div className="w-full mt-4 mb-2">
           <label htmlFor="name" className="w-full" >Message *</label>
-          <textarea name="message" className="w-full h-48 text-gray-700 p-2" placeholder="Your message" required></textarea>
+          <textarea name="message" className="w-full h-48 text-gray-700 p-2" placeholder="Your message" onChange={event => setMessage(event.target.value)}
+            value={message} required></textarea>
         </div>
 
-        <button type="submit" title="Send message" className="mt-8 py-3 px-5 text-2xl bg-indigo-500 shadow-xl text-gray-200 hover:bg-opacity-80 w-full">
-          Send</button>
         <div>
-          <p id="result-text"></p>
+          <p className={`h-8 text-2xl ${confirmAlert === "Message successfully sent." ? "text-teal-400" : "text-red-500"}`} id="result-text">{confirmAlert}</p>
         </div>
+        <button type="submit" title="Send message" className="mt-4 py-3 px-5 text-2xl bg-indigo-500 shadow-xl text-gray-200 hover:bg-opacity-80 w-full">
+          Send</button>
       </form>
 
 
