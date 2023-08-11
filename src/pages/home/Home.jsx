@@ -34,8 +34,10 @@ export const Home = (props) => {
                 smooth={true} duration={500}
                 className="w-full sm:w-auto my-8 py-3 px-5 text-2xl bg-indigo-600 dark:bg-indigo-700 text-gray-100 dark:text-gray-300 hover:bg-opacity-80 cursor-pointer">Hiring? Contact me!</Link>
             </div >
-            <img src="img/portrait_square.jpg" alt="Portrait Leonhard Link"
-              className="row-span-1 lg:row-span-2 sm:row-start-1 lg:row-start-1 col-start-1 col-span-3 sm:col-start-3 p-4 w-full rounded-full brightness-125 contrast-75 shadow-lg dark:contrast-100 dark:brightness-125" />
+            <div className="row-span-1 lg:row-span-2 sm:row-start-1 lg:row-start-1 col-start-1 col-span-3 sm:col-start-3 p-4 ">
+              <img src="img/portrait_square.jpg" alt="Portrait Leonhard Link"
+                className="w-full rounded-full brightness-125 contrast-75 shadow-lg dark:contrast-100 dark:brightness-125" />
+            </div>
           </div >
 
           <div className="container max-w-6xl mx-auto mt-10">
