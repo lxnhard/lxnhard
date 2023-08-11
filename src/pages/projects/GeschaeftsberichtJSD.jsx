@@ -12,7 +12,7 @@ export const GeschaeftsberichtJSD = () => {
       <section className="grid grid-cols-12 p-4 sm:p-8 pt-32 sm:pt-32 ">
         <div className="col-start-1 col-span-12 lg:col-start-3 lg:col-span-8" >
           <h1 className="font-headline text-6xl text-tealsat-700 dark:text-teal-600 mb-5">Case study</h1>
-          <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer"><img src="img/johannesstift_diakonie-gb22.png" alt="" /></a>
+          <a href="https://gb22.johannesstift-diakonie.de/" title="Geschäftsbericht 2022 | Johannesstift Diakonie" target="_blank" rel="noreferrer"><img src="img/johannesstift_diakonie-gb22.png" alt="" /></a>
 
           <div className="bg-slate-800/95 p-4 sm:p-8">
             <p className="text-lg text-teal-600">Johannesstift Diakonie</p>
@@ -33,7 +33,7 @@ export const GeschaeftsberichtJSD = () => {
 
 
           <p className="mt-8 mb-4 dark:text-gray-400">
-            Annual report landingpage for <a href="https://gb22.johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer" className="text-purple-700 hover:underline visited:text-indigo-500">Johannesstift Diakonie</a>. A Single Page Application written with React, utilizing various animations, complex transitions and self-hosted videos.</p>
+            Annual report landingpage for <a href="https://johannesstift-diakonie.de/" title="Johannesstift Diakonie" target="_blank" rel="noreferrer" className="text-purple-700 hover:underline visited:text-indigo-500">Johannesstift Diakonie</a>. A Single Page Application written with React, utilizing various animations, complex transitions and self-hosted videos.</p>
           <p className="mb-4 dark:text-gray-400">The website is showcasing the company’s activities throughout the year to shareholders, business partners and other interested people.</p>
           <h3 className="font-bold py-2 dark:text-gray-300">My role</h3>
           <p className="mb-4 dark:text-gray-400">
