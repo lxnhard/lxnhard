@@ -10,6 +10,7 @@ import { Layout } from "./Layout.jsx";
 export const Router = (props) => (
   <Routes>
     <Route
+      exact
       path={RoutePaths.HOME}
       element={
         <Layout>
