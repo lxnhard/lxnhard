@@ -58,7 +58,6 @@ export const Contact = () => {
           <textarea name="message" className="w-full h-48 text-gray-700 p-2" placeholder="Your message" required></textarea>
         </div>
 
-        <div className="h-captcha w-full" data-captcha="true"></div>
         <button type="submit" title="Send message" className="mt-8 py-3 px-5 text-2xl bg-indigo-500 shadow-xl text-gray-200 hover:bg-opacity-80 w-full">
           Send</button>
         <div>
