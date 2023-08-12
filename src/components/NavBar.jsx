@@ -211,7 +211,7 @@ export const NavBar = (props) => {
               <NavLink to="/"
                 title="Projects"
                 className={
-                  "text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100 text-2xl py-4"}
+                  "block text-tealsat-700 dark:text-teal-600 border-b border-gray-700 dark:border-gray-100 text-2xl py-4"}
                 onClick={() => props.updateScrollId("projects")}
               >
                 Projects
