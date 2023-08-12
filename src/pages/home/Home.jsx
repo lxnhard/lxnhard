@@ -32,7 +32,7 @@ export const Home = (props) => {
               <Link type="button"
                 to="contact"
                 smooth={true} duration={500}
-                className="w-full sm:w-auto my-8 py-3 px-5 text-2xl bg-indigo-600 dark:bg-indigo-700 text-gray-100 dark:text-gray-300 hover:bg-opacity-80 cursor-pointer">Hiring? Contact me!</Link>
+                className="inline-block w-full sm:w-auto my-8 py-3 px-5 text-2xl bg-indigo-600 dark:bg-indigo-700 text-gray-100 dark:text-gray-300 hover:bg-opacity-80 cursor-pointer">Hiring? Contact me!</Link>
             </div >
             <div className="row-span-1 lg:row-span-2 sm:row-start-1 lg:row-start-1 col-start-1 col-span-3 sm:col-start-3 p-4 ">
               <img src="img/portrait_square.jpg" alt="Portrait Leonhard Link"
